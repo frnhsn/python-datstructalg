@@ -7,7 +7,7 @@ spot in the list.
 particular value.
 Then, use "Test Run" and "Submit" to run the test cases
 at the bottom."""
-
+    
 class Element(object):
     def __init__(self, value):
         self.value = value
@@ -58,9 +58,6 @@ class LinkedList(object):
             next_node = prev_node.next
             prev_node.next = new_element
             new_element.next = next_node
-            return f'{new_element} inserted at {position}'
-        else:
-            return 'Nothing inserted'
 
     def delete(self, value):
         """Delete the first node with a given value."""
